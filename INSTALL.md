@@ -14,9 +14,17 @@ conda install -c mlgill mfoutparser
 
 Using Anaconda automatically handles package dependencies and ensures the operating system's python installation is not over written. It also ensures mfoutparser can easily be updated and/or uninstalled later. It also ensures 
 
+## Using pip
+
+Alternatively, mfoutparser can be installed using the `pip` like this:
+
+```
+pip install mfoutparser
+```
+
 ## Using setuptools
 
-Alternatively, mfoutparser can be installed using python's setuptools. Ensure that you understand how setuptools installations work so mfoutparser (and dependencies) are not installed in your operating system's python directory.
+Finally, mfoutparser can be installed using python's setuptools. Ensure that you understand how setuptools installations work so mfoutparser (and dependencies) are not installed in your operating system's python directory.
 
 First, clone the github repo using the following command:
 
