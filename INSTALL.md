@@ -6,7 +6,7 @@ The easiest way to install mfoutparser, its requirements (numpy and pandas), and
 
 After creating an environment, install numpy, pandas, Jupyter, and matplotlib according to standard installation instructions.
 
-The, mfoutparser can be installed from a [custom built package](https://anaconda.org/mlgill/mfoutparser) using the following command:
+The, mfoutparser can be installed from a [custom built package](https://anaconda.org/mlgill/mfoutparser) for Linux or Mac OS X using the following command:
 
 ```
 conda install -c mlgill mfoutparser
