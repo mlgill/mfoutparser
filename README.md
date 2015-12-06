@@ -15,4 +15,11 @@ libraries. IPython notebook (version >= 3.2.1) is required to run the
 demonstration notebook located in the `examples` directory. Matplotlib 
 is required if plotting of the data is desired.
 
-See the `mfoutparser/examples` directory for a demonstration Jupyter notebooke and sample input and output files.
+See the `mfoutparser/examples` directory for a demonstration Jupyter 
+notebook and sample input and output files. Once `mfoutparser` has been
+installed, the `examples` directory can be copied to the current path
+using the following shell command:
+
+```
+python -c 'import mfoutparser as mf; mf.copy_examples()'
+```

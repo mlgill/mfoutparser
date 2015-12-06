@@ -15,4 +15,9 @@ Numpy (tested on version 1.10.1) and Pandas (tested on version 0.17.1)
 libraries. IPython notebook (version >= 3.2.1) is required to run the
 demonstration notebook located in the `examples` directory. Matplotlib 
 is required if plotting of the data is desired.
+
+See the `examples` directory in the installation for a demonstration or
+run the following from the command line:
+
+python -c 'import mfoutparser as mf; mf.copy_examples()'
 """
