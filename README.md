@@ -15,4 +15,4 @@ python -c 'import mfoutparser as mf; mf.copy_examples()'
 
 ## Installation
 
-`mfoutparser` can be installed with the conda and pip package managers or using python's `setuptools`. See the [installation instructions](https://github.com/mlgill/mfoutparser/blob/master/INSTALL.md) for more information.
+`mfoutparser` can be installed with the [conda](https://anaconda.org/mlgill/mfoutparser) and [pip](https://pypi.python.org/pypi/mfoutparser) package managers or using python's `setuptools`. See the [installation instructions](https://github.com/mlgill/mfoutparser/blob/master/INSTALL.md) for more information.
