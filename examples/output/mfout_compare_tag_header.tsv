@@ -1,0 +1,20 @@
+tag	value
+modelfree_version	4.20
+date	Tue Jun  2 16:27:22 2015
+input_file	mfinput.2
+model_file	mfmodel.12
+data_file	ubiquitin.MFDATA
+parameter_file	ubiquitin.MFPAR
+simulation_file	none
+optimization	tval
+seed	-1985
+search	grid
+diffusion	isotropic
+algorithm	fix
+simulations	pred
+iterations	300
+trim_level	0.000
+selection	ftest
+sim_algorithm	fix
+total_spins	19
+number_of_fields	1
