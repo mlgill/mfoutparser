@@ -32,8 +32,6 @@ def copy_examples(dest_path='.'):
         if os.listdir(destination) != []:
             destination = os.sep.join([destination, 'examples'])
 
-    print(examplespath, destination, dest_path)
-
     # Copy files
     try:
         copytree(examplespath, destination)
