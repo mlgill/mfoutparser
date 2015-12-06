@@ -36,10 +36,12 @@ class _DataFrame_mf(pd.DataFrame):
 
 def parse_mfout(mfoutfilename):
     """Parse a ModelFree output file
+
        Input: path to ModelFree output file
-       Ouput: two dictionaries containing data
-              and tables. The tables are dataframes,
-              as created by Pandas.
+
+       Output: two dictionaries containing data
+               and tables. The tables are dataframes,
+               as created by Pandas.
     """
     
     tag_data_dict = _parse_mfoutfile(mfoutfilename)
@@ -93,8 +95,10 @@ def parse_mfout(mfoutfilename):
 def _parse_mfoutfile(mfoutfilename):
     """Read in the file and split the data tags into a dictionary.
        This is a private function, not meant for general use.
+
        Input: path to ModelFree file
-       Ouput: a dictionary with unparsed data
+
+       Output: a dictionary with unparsed data
     """
     
     # Read the file
@@ -137,8 +141,10 @@ def _parse_mfoutfile(mfoutfilename):
 def _split_loop_and_tag_text(text_list):
     """Split the text corresponding to a single label and create table.
        This is a private function, not meant for general use.
+
        Input: data for a single tab
-       Ouput: dataframes corresponding to single data and tables
+
+       Output: dataframes corresponding to single data and tables
     """
 
     # Split into separate lines and put into a
@@ -179,8 +185,10 @@ def _split_loop_and_tag_text(text_list):
 def _convert_tags_to_dict(text_list_tags):
     """Convert all tag data to a dictionary
        This is a private function, not meant for general use.
+
        Input: list of text tags
-       Ouput: dictionary
+
+       Output: dictionary
     """
     return OrderedDict([re.findall(r"""\s*_(\w+)\s+(.+?)\s*$""", row)[0] for row in text_list_tags])
 
@@ -188,8 +196,10 @@ def _convert_tags_to_dict(text_list_tags):
 def _convert_tags_to_df(text_dict_tags):
     """Convert all dictionary data to a dataframe
        This is a private function, not meant for general use.
+
        Input: dictionary
-       Ouput: dataframe
+
+       Output: dataframe
     """
 
     return _DataFrame_mf({u'tag'  :[item[0] for item in text_dict_tags.items()],
@@ -199,8 +209,10 @@ def _convert_tags_to_df(text_dict_tags):
 def _clean_up_tag_dict_tags(tag_dict):
     """Clean up tag names in data
        This is a private function, not meant for general use.
+
        Input: dataframe
-       Ouput: dataframe
+
+       Output: dataframe
     """
     
     # Make the tag label all lowercase
@@ -218,8 +230,10 @@ def _clean_up_tag_dict_tags(tag_dict):
 def _set_loops(loop_data):
     """Find limits of loops in data
        This is a private function, not meant for general use.
+
        Input: dataframe
-       Ouput: dataframe
+
+       Output: dataframe
     """
     # Initiate a loop column with 1 for each loop tag
     loop_data[u'loop'] = 0
@@ -256,8 +270,10 @@ def _set_loops(loop_data):
 def _set_labels(loop_data):
     """Find labels in data
        This is a private function, not meant for general use.
+
        Input: dataframe
-       Ouput: dataframe
+
+       Output: dataframe
     """
     
     # Ensure the index is linear, but set it up so the original
@@ -284,8 +300,10 @@ def _set_labels(loop_data):
 def _set_stops(loop_data):
     """Find stops in data
        This is a private function, not meant for general use.
+
        Input: dataframe
-       Ouput: dataframe
+
+       Output: dataframe
     """
 
     # Set the text that contains stops
@@ -298,8 +316,10 @@ def _set_stops(loop_data):
 def _set_values(loop_data):
     """Find rows corresponding to values in data
        This is a private function, not meant for general use.
+
        Input: dataframe
-       Ouput: dataframe
+
+       Output: dataframe
     """
     
     # These are the indexes of all the data that are unassigned
@@ -323,8 +343,10 @@ def _set_values(loop_data):
 def _extract_loop_data(loop_data):
     """Extract the values based on pre-determined start/stop positions
        This is a private function, not meant for general use.
+
        Input: dataframe
-       Ouput: dataframe
+
+       Output: dataframe
     """
     # TODO: handle different max levels for each loop set
     # Get the outer level of the loops
@@ -378,8 +400,10 @@ def _extract_loop_data(loop_data):
 def _convert_loops_to_df(text_loops):
     """Classify all data and convert to dataframe
        This is a private function, not meant for general use.
+
        Input: dataframe
-       Ouput: dataframe
+
+       Output: dataframe
     """
     
     # Convert the list to a table
@@ -401,8 +425,10 @@ def _convert_loops_to_df(text_loops):
 def _clean_up_loop_dict(loop_dict):
     """Clean up loop labels in data
        This is a private function, not meant for general use.
+
        Input: dataframe
-       Ouput: dataframe
+
+       Output: dataframe
     """
     
     # Remove the 'data_header' tag if it exists
@@ -423,8 +449,10 @@ def _clean_up_loop_dict(loop_dict):
 def _clean_up_table_column_names(loop_dict):
     """Clean up column names in data
        This is a private function, not meant for general use.
+
        Input: dataframe
-       Ouput: dataframe
+
+       Output: dataframe
     """
     
     # Make the column names all lowercase
@@ -442,8 +470,10 @@ def _clean_up_table_column_names(loop_dict):
 def _coerce_and_store_data_types(tag_loop_dict):
     """Convert columns to float and integers whenever possible
        This is a private function, not meant for general use.
+
        Input: dataframe
-       Ouput: dataframe
+
+       Output: dataframe
     """
 
     regex_format = re.compile(r"""\d*\.(?P<decimal>\d+)(?:[Ee]?[+-]?(?P<exponent>\d?))""")

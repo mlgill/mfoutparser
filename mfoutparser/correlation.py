@@ -7,8 +7,10 @@ from .read import _DataFrame_mf
 
 def make_correlation_matrices(dataframe):
     """Convert a dataframe of correlation data into a matrix
+
        Input: Pandas dataframe containing correlation data
-       Ouput: Pandas dataframe with data manipulated into matrices
+
+       Output: Pandas dataframe with data manipulated into matrices
     """
 
     # Group the data by residue then use a pivot table-like function
