@@ -21,7 +21,7 @@ Alternatively, mfoutparser can be installed using python's setuptools. Ensure th
 First, clone the github repo using the following command:
 
 ```
-git clone https://github.com/mlgill/mfoutparser
+git clone https://github.com/mlgill/mfoutparser mfoutparser
 ```
 
 Then `cd` into the downloaded directory and install mfoutparser using the following command:

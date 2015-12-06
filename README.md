@@ -15,4 +15,4 @@ libraries. IPython notebook (version >= 3.2.1) is required to run the
 demonstration notebook located in the `examples` directory. Matplotlib 
 is required if plotting of the data is desired.
 
-See the `examples` directory for a demonstration Jupyter notebooke and sample input and output files.
+See the `mfoutparser/examples` directory for a demonstration Jupyter notebooke and sample input and output files.
