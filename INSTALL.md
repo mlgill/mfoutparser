@@ -16,7 +16,7 @@ Using Anaconda automatically handles package dependencies and ensures the operat
 
 ## Using pip
 
-Alternatively, mfoutparser can be installed using the `pip` like this:
+Alternatively, mfoutparser can be installed using the `pip` package manager like this:
 
 ```
 pip install mfoutparser
@@ -24,7 +24,7 @@ pip install mfoutparser
 
 ## Using setuptools
 
-Finally, mfoutparser can be installed using python's setuptools. Ensure that you understand how setuptools installations work so mfoutparser (and dependencies) are not installed in your operating system's python directory.
+Finally, mfoutparser can be installed using python's `setuptools`. Ensure that you understand how setuptools installations work so mfoutparser (and dependencies) are not installed in your operating system's python directory.
 
 First, clone the github repo using the following command:
 
