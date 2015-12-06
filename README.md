@@ -7,7 +7,7 @@ Unlike the BMRB STAR format, the format used by ModelFree uses the data_name fie
 
 `mfoutparser` has been tested on python 2.7, 3.4, and 3.5. It requires the `numpy` (tested on version 1.10.1) and `pandas` (tested on version 0.17.1) libraries. IPython/Jupyter notebook (version >= 3.2.1) is required to run the demonstration notebook located in the `examples` directory. Matplotlib is required if plotting of the data is desired.
 
-See the `mfoutparser/examples` directory for a demonstration Jupyter notebook and sample input and output files. Once `mfoutparser` has been installed, the `examples` directory can be copied to the current path using the following shell command:
+The `mfoutparser/examples` directory for a demonstration Jupyter notebook and sample input and output files. The notebook can be viewed on GitHub [here](https://github.com/mlgill/mfoutparser/blob/master/mfoutparser/examples/MFparser_demo.ipynb). Once `mfoutparser` has been installed, the `examples` directory can be copied to the current path using the following shell command:
 
 ```
 python -c 'import mfoutparser as mf; mf.copy_examples()'
