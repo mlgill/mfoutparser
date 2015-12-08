@@ -39,11 +39,6 @@ def get_data_selection(dataframe, selector_dict, selector_type='==', copy=True):
     for key in selector_dict.keys():
 
         value = selector_dict[key]
-
-        #if key in table.index.names:
-        #    table = table.ix[table.index.get_level_values(key) == value]
-        #else:
-        #    table = table.ix[table[key] == value]
         
         if key in table.index.names:
             selector_string = ' '.join(['table.index.get_level_values(key)', selector_type, 'value'])

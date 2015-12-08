@@ -1,34 +1,128 @@
 # coding: utf-8
 import re
+import sys
 import pandas as pd
+from pandas import DataFrame as pd_DataFrame
 import numpy as np
 from collections import OrderedDict
-
 
 ### A custom class to handle display and formatting of data during output
 
 
-class _DataFrame_mf(pd.DataFrame):
-    """Create a custom dataframe class that is identical to (and based on) Pandas
-       dataframe, except that the function used to display the dataframe in the 
-       html IPython notebook will filter out the NaN values before displaying the
-       table. It is important to leave the NaN values in place in the underlying 
-       table for mathematical manipulation.
+class DataFrame(pd_DataFrame):
+    """`mfoutparser` creates a custom dataframe class, called DataFrame, that is essentially
+       identical to (and based on) Pandas dataframe, with the following minor changes:
+
+       1. The function used to display the dataframe in the html IPython notebook 
+       will filter out the NaN values before displaying the table. It is important to 
+       leave the NaN values in place in the underlying table for mathematical manipulation.
+
+       2. This dataframe also contains a custom attribute called '_print_format' that 
+       contains a dictionary whose keys correspond to the original format 
+       (decimal places) of float columns when read from the Model-Free output files. 
+       This dictionary can be used to ensure the correct float format is preserved when
+       writing the data to tab delimited files.
+
+       Type 'help(mf.DataFrame)' for more information.
     """
+
+    # TODO check that docstrigns are correct for the over written methods
 
     @property
     def _constructor(self):
-        return _DataFrame_mf
+        return DataFrame
+
 
     def __init__(self, *args, **kwargs):
-        super(_DataFrame_mf, self).__init__(*args, **kwargs)
+        # Initialize the dataframe as Pandas would and 
+        # then also add a _print_format property
+        super(DataFrame, self).__init__(*args, **kwargs)
+
+        # Create print formatter and append to method list which helps with propagation
         self._print_format = dict()
+        if '_print_format' not in self._metadata:
+            self._metadata.append('_print_format')
+
         return
-    
+
+
+    def __finalize__(self, other, method=None, **kwargs):
+        # propagate metadata from other to self
+        # other : the object from which to get the attributes that we are going to propagate
+        # method : optional, a passed method name, usually set to 'copy' if used
+
+        if isinstance(other, pd.core.generic.NDFrame):
+            for name in self._metadata:
+                if method is None:
+                    object.__setattr__(self, name, getattr(other, name, None))
+                elif method is 'copy':
+                    object.__setattr__(self, name, getattr(other, name, None).copy())
+
+        return self
+
+
     def _repr_html_(self):
-        # Replace all NaN values with '' and then run the Pandas dataframe html 
-        # representation function
-        return super(_DataFrame_mf, self.replace(to_replace=u'NaN', value=''))._repr_html_()
+        # Replace all NaN values with '' and then 
+        # run the Pandas dataframe html representation function
+        return super(DataFrame, self.replace(to_replace=u'NaN', value=''))._repr_html_()
+
+
+    def copy(self):
+        # Ensure the _print_format property is duplicated when making a copy
+        return super(DataFrame, self).copy().__finalize__(self, 'copy')
+
+
+    def to_csv(self, filename, preserve_format=True, 
+               sep='\t', na_rep=u'', index=None, *args, **kwargs):
+
+        # If the index has not been set to True or False (which determines
+        # if it should be written, then try to guess
+        # We only want to save if it includes actual data
+        if index is None:
+            index = True
+            if ((None in self.index.names) and (len(self.index.names) == 1)):
+                index = False
+
+
+        # Function to format significant digits on floats by converting them to strings
+        if ( preserve_format and hasattr(self, '_print_format') ):
+
+            format_dict = self._print_format.copy()
+            dataframe = self.copy()
+
+            # Move the index to the dataframe if it should be saved
+            if index:
+                dataframe = dataframe.reset_index()
+                index = False
+
+            # If NaN replacement is a number, replace before converting to string
+            if ( isinstance(na_rep, int) or isinstance(na_rep, float) ):
+                dataframe = dataframe.replace(np.NaN, na_rep)
+
+            for key in format_dict.keys():
+                format_string = format_dict[key]
+
+                if key in dataframe.columns:
+                    dataframe[key] = dataframe[key].apply(lambda x: format_string.format(x))
+
+            # If NaN replacement is a string, replace after converting to string
+            # General string class is different in Python 2 and 3....
+            if sys.version_info[0] == 2:
+                if isinstance(na_rep, basestring):
+                    dataframe = dataframe.replace(r"""[Nn][Aa][Nn]""", na_rep, regex=True)
+            elif sys.version_info[0] >= 3:
+                if isinstance(na_rep, str):
+                    dataframe = dataframe.replace(r"""[Nn][Aa][Nn]""", na_rep, regex=True)
+
+        else:
+            # Otherwise just use default formatting
+            dataframe = self
+
+        # Call Pandas to_csv function
+        super(DataFrame, dataframe).to_csv(filename, sep=sep, na_rep=na_rep, index=index,
+                                           *args, **kwargs)
+
+        return
 
 
 ### The primary parsing function
@@ -179,7 +273,7 @@ def _split_loop_and_tag_text(text_list):
     return text_df_loop, text_df_tags
 
 
-### Convert the tag data to a _DataFrame_mf
+### Convert the tag data to a ModelFree DataFrame
 
 
 def _convert_tags_to_dict(text_list_tags):
@@ -202,8 +296,8 @@ def _convert_tags_to_df(text_dict_tags):
        Output: dataframe
     """
 
-    return _DataFrame_mf({u'tag'  :[item[0] for item in text_dict_tags.items()],
-                         u'value':[item[1] for item in text_dict_tags.items()]})
+    return DataFrame({u'tag'  :[item[0] for item in text_dict_tags.items()],
+                      u'value':[item[1] for item in text_dict_tags.items()]})
 
 
 def _clean_up_tag_dict_tags(tag_dict):
@@ -348,7 +442,8 @@ def _extract_loop_data(loop_data):
 
        Output: dataframe
     """
-    # TODO: handle different max levels for each loop set
+    # TODO: handle different max levels for each loop set ?
+    
     # Get the outer level of the loops
     max_level = loop_data.loop.max()
 
@@ -386,7 +481,7 @@ def _extract_loop_data(loop_data):
         outer_df = outer_df.ix[level_data_index]
 
         # Reorder the data columns
-        outer_df = _DataFrame_mf(outer_df, columns=inner_df_columns).reset_index(drop=True)
+        outer_df = DataFrame(outer_df, columns=inner_df_columns).reset_index(drop=True)
 
         # Combine into a list
         outer_df_list.append(outer_df)
@@ -407,7 +502,7 @@ def _convert_loops_to_df(text_loops):
     """
     
     # Convert the list to a table
-    df_loop = pd.DataFrame(text_loops, columns=[u'text'])
+    df_loop = DataFrame(text_loops, columns=[u'text'])
     
     # Append columns which classify each row as a loop tag,
     # stop tag, label tab, or data values
