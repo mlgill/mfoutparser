@@ -1,22 +1,22 @@
-tag	value
-modelfree_version	4.10
-date	28-Dec-99
-input_file	mfin
-model_file	mfmodel
-data_file	mfdata_cross
-parameter_file	mfpar_104
-pdb_file	2rn2_prot_inert.pdb
-pdb_rotate_file	2rn2_prot_inert.pdb.rotate
-simulation_file	none
-optimization	tval
-seed	-60984
-search	grid
-diffusion	axial
-algorithm	fix
-simulations	none
-iterations	0
-trim_level	0.000
-selection	none
-sim_algorithm	fix
-total_spins	121
-number_of_fields	3
+index	tag	value
+0	modelfree_version	4.10
+1	date	28-Dec-99
+2	input_file	mfin
+3	model_file	mfmodel
+4	data_file	mfdata_cross
+5	parameter_file	mfpar_104
+6	pdb_file	2rn2_prot_inert.pdb
+7	pdb_rotate_file	2rn2_prot_inert.pdb.rotate
+8	simulation_file	none
+9	optimization	tval
+10	seed	-60984
+11	search	grid
+12	diffusion	axial
+13	algorithm	fix
+14	simulations	none
+15	iterations	0
+16	trim_level	0.000
+17	selection	none
+18	sim_algorithm	fix
+19	total_spins	121
+20	number_of_fields	3

@@ -1,5 +1,5 @@
-diffusion_name	units	fit_value	fit_error	flag	sim_value	sim_error	sim_abs	geary-z
-tm	(ns)	9.773	0.000	0	0.000	0.000	0.000	0.000
-Dratio	()	1.258	0.000	0	0.000	0.000	0.000	0.000
-Theta	(degrees)	83.050	0.000	0	0.000	0.000	0.000	0.000
-Phi	(degrees)	-4.667	0.000	0	0.000	0.000	0.000	0.000
+index	diffusion_name	units	fit_value	fit_error	flag	sim_value	sim_error	sim_abs	geary-z
+0	tm	(ns)	9.773	0.000	0	0.000	0.000	0.000	0.000
+1	Dratio	()	1.258	0.000	0	0.000	0.000	0.000	0.000
+2	Theta	(degrees)	83.050	0.000	0	0.000	0.000	0.000	0.000
+3	Phi	(degrees)	-4.667	0.000	0	0.000	0.000	0.000	0.000

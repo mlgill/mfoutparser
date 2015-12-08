@@ -1,294 +1,294 @@
-residue	model_free_name_1	model_free_name_2	covariance
-2	Theta	Theta	1.0000
-2	Theta	S2s	0.0000
-2	Theta	te	0.0000
-2	S2s	S2s	1.0000
-2	S2s	te	-0.0751
-2	te	te	1.0000
-3	Theta	Theta	1.0000
-3	Theta	S2s	0.0000
-3	S2s	S2s	1.0000
-4	Theta	Theta	1.0000
-4	Theta	S2s	0.0000
-4	S2s	S2s	1.0000
-5	Theta	Theta	1.0000
-5	Theta	S2s	0.0000
-5	S2s	S2s	1.0000
-6	Theta	Theta	1.0000
-6	Theta	S2s	0.0000
-6	S2s	S2s	1.0000
-7	Theta	Theta	1.0000
-7	Theta	S2s	0.0000
-7	Theta	te	0.0000
-7	S2s	S2s	1.0000
-7	S2s	te	-0.2247
-7	te	te	1.0000
-8	Theta	Theta	1.0000
-8	Theta	S2s	0.0000
-8	Theta	te	0.0000
-8	S2s	S2s	1.0000
-8	S2s	te	0.7316
-8	te	te	1.0000
-9	Theta	Theta	1.0000
-9	Theta	S2s	0.0000
-9	Theta	te	0.0000
-9	S2s	S2s	1.0000
-9	S2s	te	0.6925
-9	te	te	1.0000
-10	Theta	Theta	1.0000
-10	Theta	S2s	0.0000
-10	Theta	te	0.0000
-10	S2s	S2s	1.0000
-10	S2s	te	0.5564
-10	te	te	1.0000
-11	Theta	Theta	1.0000
-11	Theta	S2s	0.0000
-11	Theta	te	0.0000
-11	S2s	S2s	1.0000
-11	S2s	te	-0.2858
-11	te	te	1.0000
-12	Theta	Theta	1.0000
-12	Theta	S2s	0.0000
-12	Theta	te	0.0000
-12	S2s	S2s	1.0000
-12	S2s	te	0.6558
-12	te	te	1.0000
-13	Theta	Theta	1.0000
-13	Theta	S2s	0.0000
-13	S2s	S2s	1.0000
-14	Theta	Theta	1.0000
-14	Theta	S2s	0.0000
-14	S2s	S2s	1.0000
-15	Theta	Theta	1.0000
-15	Theta	S2s	0.0000
-15	Theta	te	0.0000
-15	S2s	S2s	1.0000
-15	S2s	te	0.3058
-15	te	te	1.0000
-16	Theta	Theta	1.0000
-16	Theta	S2s	0.0000
-16	S2s	S2s	1.0000
-17	Theta	Theta	1.0000
-17	Theta	S2s	0.0000
-17	S2s	S2s	1.0000
-18	Theta	Theta	1.0000
-18	Theta	S2s	0.0000
-18	S2s	S2s	1.0000
-20	Theta	Theta	1.0000
-20	Theta	S2s	0.0000
-20	Theta	te	0.0000
-20	S2s	S2s	1.0000
-20	S2s	te	-0.3032
-20	te	te	1.0000
-21	Theta	Theta	1.0000
-21	Theta	S2s	0.0000
-21	S2s	S2s	1.0000
-22	Theta	Theta	1.0000
-22	Theta	S2f	0.0000
-22	Theta	S2s	0.0000
-22	Theta	te	0.0000
-22	S2f	S2f	1.0000
-22	S2f	S2s	0.0261
-22	S2f	te	-0.5242
-22	S2s	S2s	1.0000
-22	S2s	te	-0.6982
-22	te	te	1.0000
-23	Theta	Theta	1.0000
-23	Theta	S2s	0.0000
-23	Theta	Rex	0.0000
-23	S2s	S2s	1.0000
-23	S2s	Rex	-0.3824
-23	Rex	Rex	1.0000
-25	Theta	Theta	1.0000
-25	Theta	S2s	0.0000
-25	Theta	te	0.0000
-25	Theta	Rex	0.0000
-25	S2s	S2s	1.0000
-25	S2s	te	-0.2226
-25	S2s	Rex	-0.1515
-25	te	te	1.0000
-25	te	Rex	-0.0272
-25	Rex	Rex	1.0000
-26	Theta	Theta	1.0000
-26	Theta	S2s	0.0000
-26	S2s	S2s	1.0000
-27	Theta	Theta	1.0000
-27	Theta	S2s	0.0000
-27	S2s	S2s	1.0000
-28	Theta	Theta	1.0000
-28	Theta	S2s	0.0000
-28	S2s	S2s	1.0000
-29	Theta	Theta	1.0000
-29	Theta	S2s	0.0000
-29	S2s	S2s	1.0000
-30	Theta	Theta	1.0000
-30	Theta	S2s	0.0000
-30	S2s	S2s	1.0000
-31	Theta	Theta	1.0000
-31	Theta	S2f	0.0000
-31	Theta	S2s	0.0000
-31	Theta	te	0.0000
-31	S2f	S2f	1.0000
-31	S2f	S2s	0.6723
-31	S2f	te	-0.8715
-31	S2s	S2s	1.0000
-31	S2s	te	-0.8812
-31	te	te	1.0000
-32	Theta	Theta	1.0000
-32	Theta	S2s	0.0000
-32	S2s	S2s	1.0000
-33	Theta	Theta	1.0000
-33	Theta	S2s	0.0000
-33	Theta	te	0.0000
-33	S2s	S2s	1.0000
-33	S2s	te	0.3009
-33	te	te	1.0000
-34	Theta	Theta	1.0000
-34	Theta	S2s	0.0000
-34	Theta	te	0.0000
-34	S2s	S2s	1.0000
-34	S2s	te	-0.1882
-34	te	te	1.0000
-35	Theta	Theta	1.0000
-35	Theta	S2s	0.0000
-35	Theta	Rex	0.0000
-35	S2s	S2s	1.0000
-35	S2s	Rex	-0.7133
-35	Rex	Rex	1.0000
-36	Theta	Theta	1.0000
-36	Theta	S2s	0.0000
-36	S2s	S2s	1.0000
-39	Theta	Theta	1.0000
-39	Theta	S2s	0.0000
-39	S2s	S2s	1.0000
-40	Theta	Theta	1.0000
-40	Theta	S2s	0.0000
-40	Theta	te	0.0000
-40	S2s	S2s	1.0000
-40	S2s	te	0.9209
-40	te	te	1.0000
-41	Theta	Theta	1.0000
-41	Theta	S2s	0.0000
-41	S2s	S2s	1.0000
-42	Theta	Theta	1.0000
-42	Theta	S2s	0.0000
-42	Theta	te	0.0000
-42	S2s	S2s	1.0000
-42	S2s	te	0.2564
-42	te	te	1.0000
-43	Theta	Theta	1.0000
-43	Theta	S2s	0.0000
-43	S2s	S2s	1.0000
-44	Theta	Theta	1.0000
-44	Theta	S2s	0.0000
-44	Theta	te	0.0000
-44	S2s	S2s	1.0000
-44	S2s	te	-0.1096
-44	te	te	1.0000
-45	Theta	Theta	1.0000
-45	Theta	S2s	0.0000
-45	S2s	S2s	1.0000
-46	Theta	Theta	1.0000
-46	Theta	S2s	0.0000
-46	Theta	te	0.0000
-46	S2s	S2s	1.0000
-46	S2s	te	-0.3437
-46	te	te	1.0000
-47	Theta	Theta	1.0000
-47	Theta	S2s	0.0000
-47	S2s	S2s	1.0000
-48	Theta	Theta	1.0000
-48	Theta	S2s	0.0000
-48	S2s	S2s	1.0000
-49	Theta	Theta	1.0000
-49	Theta	S2s	0.0000
-49	Theta	te	0.0000
-49	S2s	S2s	1.0000
-49	S2s	te	-0.1674
-49	te	te	1.0000
-50	Theta	Theta	1.0000
-50	Theta	S2s	0.0000
-50	Theta	te	0.0000
-50	S2s	S2s	1.0000
-50	S2s	te	-0.4612
-50	te	te	1.0000
-51	Theta	Theta	1.0000
-51	Theta	S2s	0.0000
-51	S2s	S2s	1.0000
-52	Theta	Theta	1.0000
-52	Theta	S2s	0.0000
-52	Theta	te	0.0000
-52	Theta	Rex	0.0000
-52	S2s	S2s	1.0000
-52	S2s	te	0.0420
-52	S2s	Rex	-0.5372
-52	te	te	1.0000
-52	te	Rex	-0.0100
-52	Rex	Rex	1.0000
-54	Theta	Theta	1.0000
-54	Theta	S2s	0.0000
-54	S2s	S2s	1.0000
-55	Theta	Theta	1.0000
-55	Theta	S2s	0.0000
-55	S2s	S2s	1.0000
-57	Theta	Theta	1.0000
-57	Theta	S2s	0.0000
-57	S2s	S2s	1.0000
-58	Theta	Theta	1.0000
-58	Theta	S2s	0.0000
-58	S2s	S2s	1.0000
-59	Theta	Theta	1.0000
-59	Theta	S2s	0.0000
-59	S2s	S2s	1.0000
-60	Theta	Theta	1.0000
-60	Theta	S2s	0.0000
-60	Theta	te	0.0000
-60	S2s	S2s	1.0000
-60	S2s	te	-0.2373
-60	te	te	1.0000
-61	Theta	Theta	1.0000
-61	Theta	S2s	0.0000
-61	S2s	S2s	1.0000
-62	Theta	Theta	1.0000
-62	Theta	S2f	0.0000
-62	Theta	S2s	0.0000
-62	Theta	te	0.0000
-62	S2f	S2f	1.0000
-62	S2f	S2s	-0.2861
-62	S2f	te	-0.1449
-62	S2s	S2s	1.0000
-62	S2s	te	-0.7954
-62	te	te	1.0000
-63	Theta	Theta	1.0000
-63	Theta	S2s	0.0000
-63	S2s	S2s	1.0000
-64	Theta	Theta	1.0000
-64	Theta	S2s	0.0000
-64	S2s	S2s	1.0000
-65	Theta	Theta	1.0000
-65	Theta	S2s	0.0000
-65	S2s	S2s	1.0000
-66	Theta	Theta	1.0000
-66	Theta	S2s	0.0000
-66	S2s	S2s	1.0000
-67	Theta	Theta	1.0000
-67	Theta	S2s	0.0000
-67	S2s	S2s	1.0000
-68	Theta	Theta	1.0000
-68	Theta	S2s	0.0000
-68	S2s	S2s	1.0000
-69	Theta	Theta	1.0000
-69	Theta	S2s	0.0000
-69	S2s	S2s	1.0000
-70	Theta	Theta	1.0000
-70	Theta	S2s	0.0000
-70	S2s	S2s	1.0000
-71	Theta	Theta	1.0000
-71	Theta	S2s	0.0000
-71	Theta	te	0.0000
-71	S2s	S2s	1.0000
-71	S2s	te	-0.0413
-71	te	te	1.0000
-72	Theta	Theta	1.0000
-72	Theta	S2s	0.0000
-72	S2s	S2s	1.0000
+index	residue	model_free_name_1	model_free_name_2	covariance
+0	2	Theta	Theta	1.0000
+1	2	Theta	S2s	0.0000
+2	2	Theta	te	0.0000
+3	2	S2s	S2s	1.0000
+4	2	S2s	te	-0.0751
+5	2	te	te	1.0000
+6	3	Theta	Theta	1.0000
+7	3	Theta	S2s	0.0000
+8	3	S2s	S2s	1.0000
+9	4	Theta	Theta	1.0000
+10	4	Theta	S2s	0.0000
+11	4	S2s	S2s	1.0000
+12	5	Theta	Theta	1.0000
+13	5	Theta	S2s	0.0000
+14	5	S2s	S2s	1.0000
+15	6	Theta	Theta	1.0000
+16	6	Theta	S2s	0.0000
+17	6	S2s	S2s	1.0000
+18	7	Theta	Theta	1.0000
+19	7	Theta	S2s	0.0000
+20	7	Theta	te	0.0000
+21	7	S2s	S2s	1.0000
+22	7	S2s	te	-0.2247
+23	7	te	te	1.0000
+24	8	Theta	Theta	1.0000
+25	8	Theta	S2s	0.0000
+26	8	Theta	te	0.0000
+27	8	S2s	S2s	1.0000
+28	8	S2s	te	0.7316
+29	8	te	te	1.0000
+30	9	Theta	Theta	1.0000
+31	9	Theta	S2s	0.0000
+32	9	Theta	te	0.0000
+33	9	S2s	S2s	1.0000
+34	9	S2s	te	0.6925
+35	9	te	te	1.0000
+36	10	Theta	Theta	1.0000
+37	10	Theta	S2s	0.0000
+38	10	Theta	te	0.0000
+39	10	S2s	S2s	1.0000
+40	10	S2s	te	0.5564
+41	10	te	te	1.0000
+42	11	Theta	Theta	1.0000
+43	11	Theta	S2s	0.0000
+44	11	Theta	te	0.0000
+45	11	S2s	S2s	1.0000
+46	11	S2s	te	-0.2858
+47	11	te	te	1.0000
+48	12	Theta	Theta	1.0000
+49	12	Theta	S2s	0.0000
+50	12	Theta	te	0.0000
+51	12	S2s	S2s	1.0000
+52	12	S2s	te	0.6558
+53	12	te	te	1.0000
+54	13	Theta	Theta	1.0000
+55	13	Theta	S2s	0.0000
+56	13	S2s	S2s	1.0000
+57	14	Theta	Theta	1.0000
+58	14	Theta	S2s	0.0000
+59	14	S2s	S2s	1.0000
+60	15	Theta	Theta	1.0000
+61	15	Theta	S2s	0.0000
+62	15	Theta	te	0.0000
+63	15	S2s	S2s	1.0000
+64	15	S2s	te	0.3058
+65	15	te	te	1.0000
+66	16	Theta	Theta	1.0000
+67	16	Theta	S2s	0.0000
+68	16	S2s	S2s	1.0000
+69	17	Theta	Theta	1.0000
+70	17	Theta	S2s	0.0000
+71	17	S2s	S2s	1.0000
+72	18	Theta	Theta	1.0000
+73	18	Theta	S2s	0.0000
+74	18	S2s	S2s	1.0000
+75	20	Theta	Theta	1.0000
+76	20	Theta	S2s	0.0000
+77	20	Theta	te	0.0000
+78	20	S2s	S2s	1.0000
+79	20	S2s	te	-0.3032
+80	20	te	te	1.0000
+81	21	Theta	Theta	1.0000
+82	21	Theta	S2s	0.0000
+83	21	S2s	S2s	1.0000
+84	22	Theta	Theta	1.0000
+85	22	Theta	S2f	0.0000
+86	22	Theta	S2s	0.0000
+87	22	Theta	te	0.0000
+88	22	S2f	S2f	1.0000
+89	22	S2f	S2s	0.0261
+90	22	S2f	te	-0.5242
+91	22	S2s	S2s	1.0000
+92	22	S2s	te	-0.6982
+93	22	te	te	1.0000
+94	23	Theta	Theta	1.0000
+95	23	Theta	S2s	0.0000
+96	23	Theta	Rex	0.0000
+97	23	S2s	S2s	1.0000
+98	23	S2s	Rex	-0.3824
+99	23	Rex	Rex	1.0000
+100	25	Theta	Theta	1.0000
+101	25	Theta	S2s	0.0000
+102	25	Theta	te	0.0000
+103	25	Theta	Rex	0.0000
+104	25	S2s	S2s	1.0000
+105	25	S2s	te	-0.2226
+106	25	S2s	Rex	-0.1515
+107	25	te	te	1.0000
+108	25	te	Rex	-0.0272
+109	25	Rex	Rex	1.0000
+110	26	Theta	Theta	1.0000
+111	26	Theta	S2s	0.0000
+112	26	S2s	S2s	1.0000
+113	27	Theta	Theta	1.0000
+114	27	Theta	S2s	0.0000
+115	27	S2s	S2s	1.0000
+116	28	Theta	Theta	1.0000
+117	28	Theta	S2s	0.0000
+118	28	S2s	S2s	1.0000
+119	29	Theta	Theta	1.0000
+120	29	Theta	S2s	0.0000
+121	29	S2s	S2s	1.0000
+122	30	Theta	Theta	1.0000
+123	30	Theta	S2s	0.0000
+124	30	S2s	S2s	1.0000
+125	31	Theta	Theta	1.0000
+126	31	Theta	S2f	0.0000
+127	31	Theta	S2s	0.0000
+128	31	Theta	te	0.0000
+129	31	S2f	S2f	1.0000
+130	31	S2f	S2s	0.6723
+131	31	S2f	te	-0.8715
+132	31	S2s	S2s	1.0000
+133	31	S2s	te	-0.8812
+134	31	te	te	1.0000
+135	32	Theta	Theta	1.0000
+136	32	Theta	S2s	0.0000
+137	32	S2s	S2s	1.0000
+138	33	Theta	Theta	1.0000
+139	33	Theta	S2s	0.0000
+140	33	Theta	te	0.0000
+141	33	S2s	S2s	1.0000
+142	33	S2s	te	0.3009
+143	33	te	te	1.0000
+144	34	Theta	Theta	1.0000
+145	34	Theta	S2s	0.0000
+146	34	Theta	te	0.0000
+147	34	S2s	S2s	1.0000
+148	34	S2s	te	-0.1882
+149	34	te	te	1.0000
+150	35	Theta	Theta	1.0000
+151	35	Theta	S2s	0.0000
+152	35	Theta	Rex	0.0000
+153	35	S2s	S2s	1.0000
+154	35	S2s	Rex	-0.7133
+155	35	Rex	Rex	1.0000
+156	36	Theta	Theta	1.0000
+157	36	Theta	S2s	0.0000
+158	36	S2s	S2s	1.0000
+159	39	Theta	Theta	1.0000
+160	39	Theta	S2s	0.0000
+161	39	S2s	S2s	1.0000
+162	40	Theta	Theta	1.0000
+163	40	Theta	S2s	0.0000
+164	40	Theta	te	0.0000
+165	40	S2s	S2s	1.0000
+166	40	S2s	te	0.9209
+167	40	te	te	1.0000
+168	41	Theta	Theta	1.0000
+169	41	Theta	S2s	0.0000
+170	41	S2s	S2s	1.0000
+171	42	Theta	Theta	1.0000
+172	42	Theta	S2s	0.0000
+173	42	Theta	te	0.0000
+174	42	S2s	S2s	1.0000
+175	42	S2s	te	0.2564
+176	42	te	te	1.0000
+177	43	Theta	Theta	1.0000
+178	43	Theta	S2s	0.0000
+179	43	S2s	S2s	1.0000
+180	44	Theta	Theta	1.0000
+181	44	Theta	S2s	0.0000
+182	44	Theta	te	0.0000
+183	44	S2s	S2s	1.0000
+184	44	S2s	te	-0.1096
+185	44	te	te	1.0000
+186	45	Theta	Theta	1.0000
+187	45	Theta	S2s	0.0000
+188	45	S2s	S2s	1.0000
+189	46	Theta	Theta	1.0000
+190	46	Theta	S2s	0.0000
+191	46	Theta	te	0.0000
+192	46	S2s	S2s	1.0000
+193	46	S2s	te	-0.3437
+194	46	te	te	1.0000
+195	47	Theta	Theta	1.0000
+196	47	Theta	S2s	0.0000
+197	47	S2s	S2s	1.0000
+198	48	Theta	Theta	1.0000
+199	48	Theta	S2s	0.0000
+200	48	S2s	S2s	1.0000
+201	49	Theta	Theta	1.0000
+202	49	Theta	S2s	0.0000
+203	49	Theta	te	0.0000
+204	49	S2s	S2s	1.0000
+205	49	S2s	te	-0.1674
+206	49	te	te	1.0000
+207	50	Theta	Theta	1.0000
+208	50	Theta	S2s	0.0000
+209	50	Theta	te	0.0000
+210	50	S2s	S2s	1.0000
+211	50	S2s	te	-0.4612
+212	50	te	te	1.0000
+213	51	Theta	Theta	1.0000
+214	51	Theta	S2s	0.0000
+215	51	S2s	S2s	1.0000
+216	52	Theta	Theta	1.0000
+217	52	Theta	S2s	0.0000
+218	52	Theta	te	0.0000
+219	52	Theta	Rex	0.0000
+220	52	S2s	S2s	1.0000
+221	52	S2s	te	0.0420
+222	52	S2s	Rex	-0.5372
+223	52	te	te	1.0000
+224	52	te	Rex	-0.0100
+225	52	Rex	Rex	1.0000
+226	54	Theta	Theta	1.0000
+227	54	Theta	S2s	0.0000
+228	54	S2s	S2s	1.0000
+229	55	Theta	Theta	1.0000
+230	55	Theta	S2s	0.0000
+231	55	S2s	S2s	1.0000
+232	57	Theta	Theta	1.0000
+233	57	Theta	S2s	0.0000
+234	57	S2s	S2s	1.0000
+235	58	Theta	Theta	1.0000
+236	58	Theta	S2s	0.0000
+237	58	S2s	S2s	1.0000
+238	59	Theta	Theta	1.0000
+239	59	Theta	S2s	0.0000
+240	59	S2s	S2s	1.0000
+241	60	Theta	Theta	1.0000
+242	60	Theta	S2s	0.0000
+243	60	Theta	te	0.0000
+244	60	S2s	S2s	1.0000
+245	60	S2s	te	-0.2373
+246	60	te	te	1.0000
+247	61	Theta	Theta	1.0000
+248	61	Theta	S2s	0.0000
+249	61	S2s	S2s	1.0000
+250	62	Theta	Theta	1.0000
+251	62	Theta	S2f	0.0000
+252	62	Theta	S2s	0.0000
+253	62	Theta	te	0.0000
+254	62	S2f	S2f	1.0000
+255	62	S2f	S2s	-0.2861
+256	62	S2f	te	-0.1449
+257	62	S2s	S2s	1.0000
+258	62	S2s	te	-0.7954
+259	62	te	te	1.0000
+260	63	Theta	Theta	1.0000
+261	63	Theta	S2s	0.0000
+262	63	S2s	S2s	1.0000
+263	64	Theta	Theta	1.0000
+264	64	Theta	S2s	0.0000
+265	64	S2s	S2s	1.0000
+266	65	Theta	Theta	1.0000
+267	65	Theta	S2s	0.0000
+268	65	S2s	S2s	1.0000
+269	66	Theta	Theta	1.0000
+270	66	Theta	S2s	0.0000
+271	66	S2s	S2s	1.0000
+272	67	Theta	Theta	1.0000
+273	67	Theta	S2s	0.0000
+274	67	S2s	S2s	1.0000
+275	68	Theta	Theta	1.0000
+276	68	Theta	S2s	0.0000
+277	68	S2s	S2s	1.0000
+278	69	Theta	Theta	1.0000
+279	69	Theta	S2s	0.0000
+280	69	S2s	S2s	1.0000
+281	70	Theta	Theta	1.0000
+282	70	Theta	S2s	0.0000
+283	70	S2s	S2s	1.0000
+284	71	Theta	Theta	1.0000
+285	71	Theta	S2s	0.0000
+286	71	Theta	te	0.0000
+287	71	S2s	S2s	1.0000
+288	71	S2s	te	-0.0413
+289	71	te	te	1.0000
+290	72	Theta	Theta	1.0000
+291	72	Theta	S2s	0.0000
+292	72	S2s	S2s	1.0000

@@ -1,20 +1,20 @@
-residue	model_free_name_1	model_free_name_2	covariance
-2	S2s	S2s	1.0000
-7	S2s	S2s	1.0000
-8	S2s	S2s	1.0000
-9	S2s	S2s	1.0000
-10	S2s	S2s	1.0000
-11	S2s	S2s	1.0000
-12	S2s	S2s	1.0000
-15	S2s	S2s	1.0000
-20	S2s	S2s	1.0000
-33	S2s	S2s	1.0000
-34	S2s	S2s	1.0000
-40	S2s	S2s	1.0000
-42	S2s	S2s	1.0000
-44	S2s	S2s	1.0000
-46	S2s	S2s	1.0000
-49	S2s	S2s	1.0000
-50	S2s	S2s	1.0000
-60	S2s	S2s	1.0000
-71	S2s	S2s	1.0000
+index	residue	model_free_name_1	model_free_name_2	covariance
+0	2	S2s	S2s	1.0000
+1	7	S2s	S2s	1.0000
+2	8	S2s	S2s	1.0000
+3	9	S2s	S2s	1.0000
+4	10	S2s	S2s	1.0000
+5	11	S2s	S2s	1.0000
+6	12	S2s	S2s	1.0000
+7	15	S2s	S2s	1.0000
+8	20	S2s	S2s	1.0000
+9	33	S2s	S2s	1.0000
+10	34	S2s	S2s	1.0000
+11	40	S2s	S2s	1.0000
+12	42	S2s	S2s	1.0000
+13	44	S2s	S2s	1.0000
+14	46	S2s	S2s	1.0000
+15	49	S2s	S2s	1.0000
+16	50	S2s	S2s	1.0000
+17	60	S2s	S2s	1.0000
+18	71	S2s	S2s	1.0000
