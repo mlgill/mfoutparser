@@ -13,7 +13,7 @@ python -c 'import mfoutparser as mf; mf.copy_examples()'
 
 ## Compatibility
 
-`mfoutparser` has been tested on python 2.7, 3.4, and 3.5. It requires the `numpy` (tested on version 1.10.1) and `pandas` (tested on version 0.17.1) libraries. IPython/Jupyter notebook (version >= 3.2.1) is required to run the demonstration notebook located in the `examples` directory. Matplotlib is required if plotting of the data is desired.
+`mfoutparser` has been tested on python 2.7, 3.4, and 3.5. It requires the `numpy` (tested on version 1.10.1) and `pandas` (version >= 0.17.1) libraries. IPython/Jupyter notebook (version >= 3.2.1) is required to run the demonstration notebook located in the `examples` directory. Matplotlib is required if plotting of the data is desired.
 
 ## Installation
 
