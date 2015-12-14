@@ -5,7 +5,14 @@ A series of python subroutines to read and extract information from the STAR for
 
 Unlike the BMRB STAR format, the format used by ModelFree uses the data_name field, rather than the save_name field and also allows nested loops. (The mfout file has loops nested to a depth of two only).
 
-The `mfoutparser/examples` directory contains a demonstration Jupyter notebook and sample input and output files. The notebook can be viewed on GitHub [here](https://github.com/mlgill/mfoutparser/blob/master/mfoutparser/examples/MFparser_demo.ipynb). Once `mfoutparser` has been installed, the `examples` directory can be copied to the current path using the following shell command:
+## Interactive Demo
+
+The `mfoutparser/examples` directory contains a demonstration Jupyter notebook and sample input and output files. The notebook can be viewed (non-interactively) on GitHub [here](https://github.com/mlgill/mfoutparser/blob/master/mfoutparser/examples/MFparser_demo.ipynb). 
+
+The interactive demo can also be run live in the web browser by clicking here: [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/mlgill/mfoutparser). After the page loads in Jupyter, click on the following to get to and load the notebook: `mfoutparser` --> `examples` --> `MFparser_demo.ipynb`.
+
+
+Once `mfoutparser` has been installed, the `examples` directory can be copied to the current path using the following shell command:
 
 ```
 python -c 'import mfoutparser as mf; mf.copy_examples()'
